@@ -2,15 +2,576 @@
     {
         "id": "695d9fb11b742312",
         "type": "tab",
-        "label": "Fluxo 1",
+        "label": "Students",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "cf9417a45258856f",
+        "id": "d185d6d70b05a742",
+        "type": "subflow",
+        "name": "Insert User",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "34212eb5d545fec6"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99",
+        "status": {
+            "x": 420,
+            "y": 60,
+            "wires": [
+                {
+                    "id": "a37f30148d29931c",
+                    "port": 0
+                }
+            ]
+        }
+    },
+    {
+        "id": "3109ca3bcc9855f8",
+        "type": "group",
+        "z": "695d9fb11b742312",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cae68a4a6953138b",
+            "f1150c9786e36917",
+            "b6b145f94d193f63",
+            "5b9ee28c3d2f4ce3"
+        ],
+        "x": 134,
+        "y": 59,
+        "w": 272,
+        "h": 202
+    },
+    {
+        "id": "8fba801980e7d945",
+        "type": "group",
+        "z": "695d9fb11b742312",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "232a48d3c44ecb75",
+            "44b803e878d44742",
+            "58735bcc510227bc",
+            "a60b025037f31e6d"
+        ],
+        "x": 414,
+        "y": 59,
+        "w": 312,
+        "h": 202
+    },
+    {
+        "id": "cf799debfb4b1042",
+        "type": "group",
+        "z": "695d9fb11b742312",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "167ad238adf425ba",
+            "49030c4e5c5cd315",
+            "8112ac1627a27963",
+            "1a1b964614ca9fb3",
+            "3155d1ad3887998e",
+            "ae04eaa3fbaab949"
+        ],
+        "x": 114,
+        "y": 299,
+        "w": 312,
+        "h": 282
+    },
+    {
+        "id": "f3fcb7925afc06d9",
+        "type": "group",
+        "z": "695d9fb11b742312",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "fffa2bdd3a310920",
+            "6f94e64c91ab717a",
+            "fe62eb192a1ee52c"
+        ],
+        "x": 494,
+        "y": 399,
+        "w": 392,
+        "h": 182
+    },
+    {
+        "id": "7096e8b42c258dd2",
+        "type": "group",
+        "z": "695d9fb11b742312",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "86cea932cc46091a",
+            "5d60327beb8c1e2d",
+            "de09d2a8fa4388bb",
+            "dd3ec23d8d3144c1",
+            "2e204cd3d492aab8",
+            "101352d74d2b1398"
+        ],
+        "x": 774,
+        "y": 19,
+        "w": 392,
+        "h": 282
+    },
+    {
+        "id": "0f94dc2586ba1b93",
+        "type": "group",
+        "z": "695d9fb11b742312",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "fb73c05980b8842c",
+            "bda4307402e6375b",
+            "c2b48880f99a268b",
+            "136de15d84c6c0a8",
+            "0f323bdfecc8604e",
+            "ac33632f5cb91042",
+            "e69b557364e78422",
+            "0eefe5b4f29a5292"
+        ],
+        "x": 974,
+        "y": 359,
+        "w": 592,
+        "h": 242
+    },
+    {
+        "id": "08ac6058cc2e7eaa",
+        "type": "group",
+        "z": "695d9fb11b742312",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4289cbff4eec5765",
+            "d6189f53183c3f7c",
+            "4803aabe5e544e14",
+            "2074a03639f42b15"
+        ],
+        "x": 1194,
+        "y": 39,
+        "w": 312,
+        "h": 202
+    },
+    {
+        "id": "4dc73179cb5b2e42",
+        "type": "global-config",
+        "name": "global-config",
+        "env": [
+            {
+                "name": "POSTGRES_URI",
+                "value": "postgress://erickwendel:erick@postgres:5432/ewacademy",
+                "type": "str"
+            }
+        ]
+    },
+    {
+        "id": "a42c8bfb4f95c5ce",
+        "type": "knex-config",
+        "connectionName": "db-connection",
+        "uri": "${POSTGRES_URI}",
+        "searchPath": "[\"public\"]",
+        "ssl": false,
+        "timezone": "${TZ}",
+        "poolMin": "2",
+        "poolMax": "10",
+        "acquireTimeoutMillis": "30000",
+        "createTimeoutMillis": "30000",
+        "idleTimeoutMillis": "1000",
+        "additionalKnexConf": "{}"
+    },
+    {
+        "id": "34212eb5d545fec6",
+        "type": "function",
+        "z": "d185d6d70b05a742",
+        "name": "validate request",
+        "func": "\nconst schema = flow.get('students-registration-schema');\n\ntry {\n    const result = await schema.validateAsync(msg.payload)\n    msg.payload = result;\n    node.status({ fill: 'green', shape: 'ring', text: 'payload is valid!' });\n} catch(error) {\n    node.warn(error);\n    msg.payload = {error: error};\n    node.status({fill:\"red\",shape:\"ring\",text:\"payload is invalid!\"});\n} finally {\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n\nconst schema = Joi.object({\n    name: Joi.string().min(3).max(100).required(),\n    course: Joi.string().min(3).max(100).required()\n});\n\nflow.set('students-registration-schema', schema);",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "Joi",
+                "module": "joi"
+            }
+        ],
+        "x": 220,
+        "y": 80,
+        "wires": [
+            [
+                "3e2193b2ca833138"
+            ]
+        ]
+    },
+    {
+        "id": "3e2193b2ca833138",
+        "type": "switch",
+        "z": "d185d6d70b05a742",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "error",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "b821b558a1ec4011"
+            ],
+            [
+                "a37f30148d29931c"
+            ]
+        ],
+        "outputLabels": [
+            "Error case",
+            "Success case"
+        ]
+    },
+    {
+        "id": "b821b558a1ec4011",
+        "type": "http response",
+        "z": "d185d6d70b05a742",
+        "name": "",
+        "statusCode": "400",
+        "headers": {},
+        "x": 500,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6562fe0c6ba0d8ca",
+        "type": "function",
+        "z": "d185d6d70b05a742",
+        "name": "get course id",
+        "func": "const { knex, payload } = msg;\n\nconst course = await knex('courses')\n    .select('id')\n    .where({ name: payload.course })\n    .first();\n\nif (!course) {\n    msg.payload = {\n        error: `The given Course ${payload.course} doesnt exists`\n    };\n\n    msg.statusCode = 404;\n    node.status({fill:\"red\",shape:\"ring\",text:msg.payload.error });\n    return msg;\n}\n\nnode.status({fill:\"green\",shape:\"ring\",text:\"user exists\"});\n\nmsg.payload = {\n    ...payload,\n    courseId: course.id\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "87561ef04e84e798"
+            ]
+        ]
+    },
+    {
+        "id": "a37f30148d29931c",
+        "type": "knex-node",
+        "z": "d185d6d70b05a742",
+        "connection": "a42c8bfb4f95c5ce",
+        "x": 270,
+        "y": 200,
+        "wires": [
+            [
+                "6562fe0c6ba0d8ca"
+            ]
+        ]
+    },
+    {
+        "id": "87561ef04e84e798",
+        "type": "switch",
+        "z": "d185d6d70b05a742",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "error",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 320,
+        "wires": [
+            [
+                "b821b558a1ec4011"
+            ],
+            [
+                "9ddadfe5451556ab"
+            ]
+        ],
+        "outputLabels": [
+            "Error case",
+            "Success case"
+        ]
+    },
+    {
+        "id": "9ddadfe5451556ab",
+        "type": "function",
+        "z": "d185d6d70b05a742",
+        "name": "upsert user",
+        "func": "const { knex, payload } = msg;\n\nconst result = await knex('students')\n    .insert({\n        name: payload.name,\n        courseId: payload.courseId\n    });\n\nmsg.payload = { result: 'success' };\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 360,
+        "wires": [
+            [
+                "abed63a3a0211cf1"
+            ]
+        ]
+    },
+    {
+        "id": "abed63a3a0211cf1",
+        "type": "http response",
+        "z": "d185d6d70b05a742",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 560,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "cae68a4a6953138b",
+        "type": "http in",
+        "z": "695d9fb11b742312",
+        "g": "3109ca3bcc9855f8",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "f1150c9786e36917"
+            ]
+        ]
+    },
+    {
+        "id": "f1150c9786e36917",
+        "type": "change",
+        "z": "695d9fb11b742312",
+        "g": "3109ca3bcc9855f8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "hello world",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 180,
+        "wires": [
+            [
+                "b6b145f94d193f63"
+            ]
+        ]
+    },
+    {
+        "id": "b6b145f94d193f63",
+        "type": "http response",
+        "z": "695d9fb11b742312",
+        "g": "3109ca3bcc9855f8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 270,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5b9ee28c3d2f4ce3",
+        "type": "comment",
+        "z": "695d9fb11b742312",
+        "g": "3109ca3bcc9855f8",
+        "name": "Hello World endpoint",
+        "info": "",
+        "x": 280,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "232a48d3c44ecb75",
         "type": "inject",
         "z": "695d9fb11b742312",
+        "g": "8fba801980e7d945",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [
+                "44b803e878d44742"
+            ]
+        ]
+    },
+    {
+        "id": "44b803e878d44742",
+        "type": "http request",
+        "z": "695d9fb11b742312",
+        "g": "8fba801980e7d945",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:1880/hello",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "58735bcc510227bc"
+            ]
+        ]
+    },
+    {
+        "id": "58735bcc510227bc",
+        "type": "debug",
+        "z": "695d9fb11b742312",
+        "g": "8fba801980e7d945",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a60b025037f31e6d",
+        "type": "comment",
+        "z": "695d9fb11b742312",
+        "g": "8fba801980e7d945",
+        "name": "Hello World endpoint Debugger",
+        "info": "",
+        "x": 570,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "167ad238adf425ba",
+        "type": "knex-node",
+        "z": "695d9fb11b742312",
+        "g": "cf799debfb4b1042",
+        "connection": "a42c8bfb4f95c5ce",
+        "x": 250,
+        "y": 420,
+        "wires": [
+            [
+                "8112ac1627a27963"
+            ]
+        ]
+    },
+    {
+        "id": "49030c4e5c5cd315",
+        "type": "inject",
+        "z": "695d9fb11b742312",
+        "g": "cf799debfb4b1042",
         "name": "",
         "props": [
             {
@@ -26,12 +587,457 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
+        "payload": "iso",
         "payloadType": "date",
-        "x": 200,
+        "x": 220,
+        "y": 380,
+        "wires": [
+            [
+                "167ad238adf425ba"
+            ]
+        ]
+    },
+    {
+        "id": "8112ac1627a27963",
+        "type": "function",
+        "z": "695d9fb11b742312",
+        "g": "cf799debfb4b1042",
+        "name": "create tables",
+        "func": "const knex = msg.knex;\n\n\nawait knex.schema.dropTableIfExists('students');\nawait knex.schema.dropTableIfExists('courses');\n\nawait knex.schema.createTable('courses', function(table) {\n    table.increments('id').primary();\n    table.string('name');\n});\n\nawait knex.schema\n    .createTable('students', (table) => {\n        table.increments('id').primary();\n        table.string('name');\n        table.integer('courseId');\n\n        table\n            .foreign('courseId')\n            .references('courses.id')\n            .withKeyName('fk_fkey_courses');\n});\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 460,
+        "wires": [
+            [
+                "3155d1ad3887998e"
+            ]
+        ]
+    },
+    {
+        "id": "1a1b964614ca9fb3",
+        "type": "debug",
+        "z": "695d9fb11b742312",
+        "g": "cf799debfb4b1042",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 300,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "3155d1ad3887998e",
+        "type": "function",
+        "z": "695d9fb11b742312",
+        "g": "cf799debfb4b1042",
+        "name": "seed data",
+        "func": "await msg.knex('courses')\n.insert([\n    { name: \"Método TAJS\" },\n    { name: \"Formação JavaScript Expert\" }\n]);\n\nawait msg.knex('students')\n.insert([\n    { name: 'Zezin', courseId: 1 },\n]);\n\nconst [courses, students] = await Promise.all([\n    msg.knex('courses').select('*'),\n    msg.knex('students').select('*')\n]);\n\n\nmsg.payload = { courses, students }\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 500,
+        "wires": [
+            [
+                "1a1b964614ca9fb3"
+            ]
+        ]
+    },
+    {
+        "id": "ae04eaa3fbaab949",
+        "type": "comment",
+        "z": "695d9fb11b742312",
+        "g": "cf799debfb4b1042",
+        "name": "create tables and seed data",
+        "info": "",
+        "x": 280,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "fffa2bdd3a310920",
+        "type": "http in",
+        "z": "695d9fb11b742312",
+        "g": "f3fcb7925afc06d9",
+        "name": "",
+        "url": "/student",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 600,
+        "y": 500,
+        "wires": [
+            [
+                "fe62eb192a1ee52c"
+            ]
+        ]
+    },
+    {
+        "id": "6f94e64c91ab717a",
+        "type": "comment",
+        "z": "695d9fb11b742312",
+        "g": "f3fcb7925afc06d9",
+        "name": "Create Student",
+        "info": "",
+        "x": 660,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "86cea932cc46091a",
+        "type": "inject",
+        "z": "695d9fb11b742312",
+        "g": "7096e8b42c258dd2",
+        "name": "Inject Valid Request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Erick Wendel\",\"course\":\"Método TAJS\"}",
+        "payloadType": "json",
+        "x": 910,
+        "y": 100,
+        "wires": [
+            [
+                "5d60327beb8c1e2d"
+            ]
+        ]
+    },
+    {
+        "id": "5d60327beb8c1e2d",
+        "type": "http request",
+        "z": "695d9fb11b742312",
+        "g": "7096e8b42c258dd2",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:1880/student",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 950,
+        "y": 220,
+        "wires": [
+            [
+                "de09d2a8fa4388bb"
+            ]
+        ]
+    },
+    {
+        "id": "de09d2a8fa4388bb",
+        "type": "debug",
+        "z": "695d9fb11b742312",
+        "g": "7096e8b42c258dd2",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "dd3ec23d8d3144c1",
+        "type": "comment",
+        "z": "695d9fb11b742312",
+        "g": "7096e8b42c258dd2",
+        "name": "Create Student endpoint Debugger",
+        "info": "",
+        "x": 980,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "2e204cd3d492aab8",
+        "type": "inject",
+        "z": "695d9fb11b742312",
+        "g": "7096e8b42c258dd2",
+        "name": "Inject Invalid Request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Erick Wendel\"}",
+        "payloadType": "json",
+        "x": 960,
+        "y": 140,
+        "wires": [
+            [
+                "5d60327beb8c1e2d"
+            ]
+        ]
+    },
+    {
+        "id": "101352d74d2b1398",
+        "type": "inject",
+        "z": "695d9fb11b742312",
+        "g": "7096e8b42c258dd2",
+        "name": "Inject Inexisting Course Request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"name\":\"Erick Wendel\",\"course\":\"Curso não existente\"}",
+        "payloadType": "json",
+        "x": 990,
+        "y": 180,
+        "wires": [
+            [
+                "5d60327beb8c1e2d"
+            ]
+        ]
+    },
+    {
+        "id": "fe62eb192a1ee52c",
+        "type": "subflow:d185d6d70b05a742",
+        "z": "695d9fb11b742312",
+        "g": "f3fcb7925afc06d9",
+        "name": "",
+        "x": 790,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "136de15d84c6c0a8",
+        "type": "http in",
+        "z": "695d9fb11b742312",
+        "g": "0f94dc2586ba1b93",
+        "name": "",
+        "url": "/student",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1070,
+        "y": 440,
+        "wires": [
+            [
+                "c2b48880f99a268b"
+            ]
+        ]
+    },
+    {
+        "id": "c2b48880f99a268b",
+        "type": "knex-node",
+        "z": "695d9fb11b742312",
+        "g": "0f94dc2586ba1b93",
+        "connection": "a42c8bfb4f95c5ce",
+        "x": 1150,
+        "y": 480,
+        "wires": [
+            [
+                "bda4307402e6375b"
+            ]
+        ]
+    },
+    {
+        "id": "bda4307402e6375b",
+        "type": "function",
+        "z": "695d9fb11b742312",
+        "g": "0f94dc2586ba1b93",
+        "name": "get all students",
+        "func": "const { knex } = msg;\n\nconst students = await knex('students')\n    .select('*');\n\n\nmsg.statusCode = 200;\nmsg.payload = {\n    students\n};\n\nnode.status({ fill:'green', shape: \"ring\", text: \"Ok\" });\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 520,
+        "wires": [
+            [
+                "fb73c05980b8842c"
+            ]
+        ]
+    },
+    {
+        "id": "fb73c05980b8842c",
+        "type": "http response",
+        "z": "695d9fb11b742312",
+        "g": "0f94dc2586ba1b93",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1330,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "0f323bdfecc8604e",
+        "type": "comment",
+        "z": "695d9fb11b742312",
+        "g": "0f94dc2586ba1b93",
+        "name": "Get All Students Endpoint",
+        "info": "",
+        "x": 1190,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ac33632f5cb91042",
+        "type": "catch",
+        "z": "695d9fb11b742312",
+        "g": "0f94dc2586ba1b93",
+        "name": "Catch Knex Connection Error",
+        "scope": [
+            "c2b48880f99a268b"
+        ],
+        "uncaught": false,
+        "x": 1360,
+        "y": 440,
+        "wires": [
+            [
+                "0eefe5b4f29a5292"
+            ]
+        ]
+    },
+    {
+        "id": "e69b557364e78422",
+        "type": "http response",
+        "z": "695d9fb11b742312",
+        "g": "0f94dc2586ba1b93",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1490,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0eefe5b4f29a5292",
+        "type": "function",
+        "z": "695d9fb11b742312",
+        "g": "0f94dc2586ba1b93",
+        "name": "Error",
+        "func": "\n\nmsg.payload = {\n    error: 'An error occurried when accessing de database!'\n};\n\nmsg.statusCode = 500;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 480,
+        "wires": [
+            [
+                "e69b557364e78422"
+            ]
+        ]
+    },
+    {
+        "id": "4289cbff4eec5765",
+        "type": "inject",
+        "z": "695d9fb11b742312",
+        "g": "08ac6058cc2e7eaa",
+        "name": "Inject Valid Request",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1330,
         "y": 120,
         "wires": [
-            []
+            [
+                "d6189f53183c3f7c"
+            ]
         ]
+    },
+    {
+        "id": "d6189f53183c3f7c",
+        "type": "http request",
+        "z": "695d9fb11b742312",
+        "g": "08ac6058cc2e7eaa",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:1880/student",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1330,
+        "y": 160,
+        "wires": [
+            [
+                "4803aabe5e544e14"
+            ]
+        ]
+    },
+    {
+        "id": "4803aabe5e544e14",
+        "type": "debug",
+        "z": "695d9fb11b742312",
+        "g": "08ac6058cc2e7eaa",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1340,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2074a03639f42b15",
+        "type": "comment",
+        "z": "695d9fb11b742312",
+        "g": "08ac6058cc2e7eaa",
+        "name": "Get Students endpoint Debugger",
+        "info": "",
+        "x": 1350,
+        "y": 80,
+        "wires": []
     }
 ]
